@@ -96,6 +96,6 @@ app.get('/weather',(req,res)=>{
 
 //starting the server 
 //here 3000 is port no
-app.listen(post,()=>{
+app.listen(port,()=>{
     console.log('Server Is Up and Running on Port '+port);
 })
