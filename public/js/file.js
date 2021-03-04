@@ -37,9 +37,7 @@ weatherForm.addEventListener('submit',(e)=>{
                     msg.textContent=data.error;
                     msg.style.color="red";
                 }
-                else{
-                    console.log(data)
-                    
+                else{                    
                     summary="weather summary is "+data.summary+", min temperature : "+(data.min_temp-273).toFixed(2)+" C, max_temperature : "+(data.max_temp-273).toFixed(2)+" C,location name : "+data.name;
                     msg.textContent=summary;
                     msg.style.color="#777";                    
